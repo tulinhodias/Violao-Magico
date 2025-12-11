@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violão Mágico</title>
+    <!-- Tailwind CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Fredoka', 'sans-serif'],
+            },
+            colors: {
+              primary: '#FFD93D', // Yellow
+              secondary: '#6BCB77', // Green
+              accent: '#4D96FF', // Blue
+              danger: '#FF6B6B', // Red
+              dark: '#2D3436',
+            },
+            boxShadow: {
+              'cartoon': '4px 4px 0px 0px rgba(45, 52, 54, 1)',
+              'cartoon-sm': '2px 2px 0px 0px rgba(45, 52, 54, 1)',
+              'cartoon-active': '0px 0px 0px 0px rgba(45, 52, 54, 1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F7F9FC;
+      }
+      /* Custom scrollbar for fun look */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4D96FF; 
+        border-radius: 6px;
+        border: 2px solid #f1f1f1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
